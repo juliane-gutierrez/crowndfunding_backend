@@ -2,14 +2,14 @@
 Django-DRF She Codes Project
 
 # Crowdfunding Back End
-{{ your name here }}
+Juliane Gutierrez
 
 ## Planning:
 ### Concept/Name
-{{ Include a short description of your website concept here. }}
+It is a crowndfunding backend website to fund flight tickes to travel to Brazil to see my parents.
 
 ### Intended Audience/User Stories
-{{ Who are your intended audience? How will they use the website? }}
+Adults only, mainly immigrats in Australia who understands what life is far from their parents.
 
 ### Front End Pages/Functionality
 - Homepage
@@ -35,12 +35,33 @@ It might look messy here in the PDF, but once it's rendered it looks very neat!
 
 It can be helpful to keep the markdown preview open in VS Code so that you can see what you're typing more easily. }}
 
-| URL               |HTTP Method | Purpose                   | Request Body | Success Response Code | Authentication/Authorisation|
-| ---               | ---------- | -------                   | ------------ | --------------------- | ----------------------------|
-| /fundraisers      | GET        | Fetch all the fundraisers | N/A          |  200                  | None               |                           
-| /fundraisers/     | POST       |Create a new fundraiser    | JSON         | 201                   | Any logged in user                   
-| /fundraisers/     |  
-| /1pledges/        | GET        | New Pledge for Fund.      | JSON         | 201                   | Any logged in user|
+
+| URL | HTTP Method | Purpose | Request Body | Success Response Code | Authentication/Authorisation |
+| --- | ----------- | ------- | ------------ | --------------------- | ---------------------------- |
+|     |             |         |              |                       |                              |
+
+|URL           | HTTP Method| Purpose| 
+ /fundraisers  | GET        | Fetch all the fundraisers 
+ /fundraisers/ | POST       | Create a new fundraiser
+ /fundraisers/ | GET        | 
+ /1pledges/    | GET        | Fetch all pledges
+ /1 pledges/   | POST       | New pledge
+ /users/       | GET        | Fetch all users
+ /users/       | POST       | new user
+
+Request Body  | Success Response Code| Authentication/Authorisation|
+ N/A          | 200                 | None
+ JSON         | 201                 | Any logged in user 
+ N/A          | N/A                 | N/A
+ N/A          | 200                 | None
+ JSON         | 201                 | Logged in user
+ N/A          | 200                 | None
+ JSON         | 201                 | Logged in user
+
+
+
+
+
 
 # this table needs to be updated
 
