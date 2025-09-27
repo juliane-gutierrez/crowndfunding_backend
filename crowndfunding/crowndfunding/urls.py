@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('fundraisers.urls')),
     path('', include('users.urls')),
+    path('', include('juliane-gutierrez-she-codes-django.urls')),
     path('api-token-auth/', CustomAuthToken.as_view(), name='api_token_auth')
 
 ]

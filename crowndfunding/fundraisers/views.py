@@ -2,6 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status, permissions
 from django.http import Http404
+from django.http import HttpResponse     
 from .models import Fundraiser, Pledge
 from .serializers import FundraiserSerializer, PledgeSerializer, FundraiserDetailSerializer
 from .permissions import IsOwnerOrReadyOnly
@@ -91,3 +92,5 @@ class PledgeList(APIView):
                 status=status.HTTP_400_BAD_REQUEST
                 )
 
+def home(request):
+    return HttpResponse("Welcome to the Juliane Gutierrez She Codes Django Crowdfunding App!")
