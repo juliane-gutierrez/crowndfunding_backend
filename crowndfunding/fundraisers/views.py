@@ -70,7 +70,7 @@ class FundraiserDetail(APIView):
 
 
 class PledgeList(APIView):
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, isOwnerOrReadyOnly]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadyOnly]
     def get(self, request):
         pledges=Pledge.objects.all()
         self.get_object_permissions(self.request, pledges)
